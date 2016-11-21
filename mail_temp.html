@@ -20,13 +20,29 @@
 .sun-gradient {
     width: 100%;
     background-image: radial-gradient(circle 350px at 50% 15%, #b2ffcd, #b2ffcd, #2dbc60, #2dbc60);
-    transition: background 1s;
-    -webkit-transition: background 1s; /* Safari */
+    transition: 1s;
+    -webkit-transition: 1s; /* Safari */
+}
+
+a.confirm {
+    color: #106a32;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 50px;
+    border-radius: 6px;
+    border-width: 2px;
 }
 
 a.confirm:hover {
     background: #106a32;
     color: #fff !important;
+    webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
 }
 
 </style>
@@ -140,7 +156,7 @@ a.confirm:hover {
                                                         <tr>
                                                             <td align="center" bgcolor="" height="30" style="font-size: 14.0px;font-family: Helvetica , arial , sans-serif;text-align: center;color: rgb(255,255,255);font-weight: 300;padding-left: 18.0px;padding-right: 18.0px;border-collapse: collapse;background-color: transparent;" valign="middle" width="auto">
                                                                 <span style="color: rgb(255,255,255);font-weight: bold;">
-                                                                    <a class="confirm" href="#" style="color: #106a32;text-align: center;text-decoration: none;border: 1px solid;padding: 10px 50px;border-radius: 6px;border-width: 2px;" target="_blank">Confirm</a>
+                                                                    <a class="confirm" href="#" target="_blank">Confirm</a>
                                                                 </span>
                                                             </td>
                                                         </tr>
